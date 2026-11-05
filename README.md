@@ -42,14 +42,3 @@ nutriglobe-website/
 ```
 
 ---
-
-## How to Enable GitHub Pages
-
-If GitHub Pages is not already active for this repository:
-1. Navigate to the repository on GitHub: `https://github.com/syedwasifalirizvi/nutriglobe-website`.
-2. Click **Settings** (top tab navigation).
-3. In the left sidebar, click **Pages** (under the "Code and automation" section).
-4. Under **Build and deployment > Source**, select **Deploy from a branch**.
-5. Under **Branch**, choose **`main`** and folder **`/ (root)`**, then click **Save**.
-6. Wait 1–2 minutes for the GitHub Actions deployment workflow to finish. The site will be live at:
-   `https://syedwasifalirizvi.github.io/nutriglobe-website/`
