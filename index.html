@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NutriGlobe 2.0 — Precision Botanical Nutrition & Macro Tracking</title>
+  <meta name="description" content="NutriGlobe 2.0 is an offline-first precision nutrition and calorie tracker featuring 165 global foods, 14 regional cuisines, Mifflin-St Jeor metabolic calculations, and multi-user privacy.">
+  <meta name="keywords" content="NutriGlobe, nutrition tracker, calorie counter, macro tracker, botanical nutrition, offline diet tracker, Mifflin-St Jeor, barcode scanner, regional cuisine">
+  <meta name="author" content="NutriGlobe Systems">
+  <meta name="theme-color" content="#526B4B">
+
+  <!-- Open Graph / Social Media Meta Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://syedwasifalirizvi.github.io/nutriglobe-website/">
+  <meta property="og:title" content="NutriGlobe 2.0 — Precision Botanical Nutrition">
+  <meta property="og:description" content="Track calories, macros, hydration, and body measurements with mathematical accuracy. 100% offline-ready with encrypted cloud sync.">
+  <meta property="og:image" content="./assets/images/app-dashboard-hero.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="./assets/images/favicon.svg">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+
+  <!-- Site Navigation -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="./index.html" class="brand-link" aria-label="NutriGlobe Home">
+        <img src="./assets/images/logo.svg" alt="NutriGlobe Logo" class="brand-logo-img">
+      </a>
+
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#cuisines" class="nav-link">Cuisines</a>
+        <a href="#tracking" class="nav-link">Tracking</a>
+        <a href="#wellness" class="nav-link">Analytics</a>
+        <a href="#premium" class="nav-link">NutriGlobe Plus</a>
+        <a href="#support" class="nav-link">Support</a>
+        <a href="./privacy.html" class="nav-link">Privacy Policy</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#premium" class="btn btn-secondary">Explore Plus</a>
+        <a href="#download" class="btn btn-primary">Get the App</a>
+      </div>
+
+      <button class="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        ☰
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-section">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="hero-badge-dot"></span>
+            <span>NutriGlobe 2.0 Released · Cloud Synced & Offline Ready</span>
+          </div>
+
+          <h1 class="serif-display hero-title">
+            Precision Nutrition. <br>
+            <span class="text-gradient">Botanical Elegance.</span>
+          </h1>
+
+          <p class="hero-description">
+            Experience an intelligent nutrition companion engineered with the Mifflin-St Jeor metabolic engine, 165 culturally diverse dish profiles across 14 culinary traditions, and a sandboxed offline-first database.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#features" class="btn btn-primary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              Explore Capabilities
+            </a>
+            <a href="./privacy.html" class="btn btn-secondary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              Privacy & Security Audit
+            </a>
+          </div>
+
+          <div class="hero-features-list">
+            <div class="hero-feature-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>100% Offline SQLite Core</span>
+            </div>
+            <div class="hero-feature-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>160 High-Res Dish Photos</span>
+            </div>
+            <div class="hero-feature-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Zero Unwanted Cloud Uploads</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="phone-wrapper">
+            <!-- Floating Macro Card Top -->
+            <div class="floating-card floating-card-top">
+              <div class="card-stat-label">Daily Calorie Target</div>
+              <div class="card-stat-value">2,240 <span class="card-stat-sub">kcal</span></div>
+              <div class="macro-pills">
+                <span class="macro-pill protein">168g P</span>
+                <span class="macro-pill carbs">224g C</span>
+                <span class="macro-pill fat">74g F</span>
+              </div>
+            </div>
+
+            <!-- Phone Frame with Live Device Screenshot -->
+            <div class="phone-frame">
+              <div class="phone-speaker"></div>
+              <img src="./assets/images/app-dashboard-hero.png" alt="NutriGlobe 2.0 Live Dashboard Interface" class="phone-screen">
+            </div>
+
+            <!-- Floating Offline Card Bottom -->
+            <div class="floating-card floating-card-bottom">
+              <div class="card-stat-label">Data Privacy Status</div>
+              <div class="card-stat-value" style="color: var(--color-success); font-size: 1.15rem;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="display:inline; margin-right:4px;"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                Per-User Isolation
+              </div>
+              <span class="card-stat-sub">Multi-User Sandboxed DB</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section alt-bg">
+    <div class="container">
+      <div style="text-align: center; max-width: 760px; margin: 0 auto 56px;">
+        <span class="section-label">Our Philosophy</span>
+        <h2 class="serif-display section-title">Scientific Accuracy Wrapped in Organic Calm</h2>
+        <p class="section-subtitle" style="margin-left: auto; margin-right: auto;">
+          NutriGlobe was designed from the ground up to eliminate the friction, anxiety, and rigid tracking methods of traditional fitness apps.
+        </p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon-box">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          </div>
+          <h3 class="serif-display">Mifflin-St Jeor Engine</h3>
+          <p>
+            Target calories and daily energy expenditures are derived from clinical metabolic equations, customized by age, biological sex, height, activity level, and clinical safety floors (1,200–1,500 kcal).
+          </p>
+          <div class="feature-badge-list">
+            <span class="badge-tag">BMR & TDEE</span>
+            <span class="badge-tag">Metabolic Safety Floor</span>
+            <span class="badge-tag">Macro Splits (4/4/9)</span>
+          </div>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-box gold">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </div>
+          <h3 class="serif-display">Global Cultural Integrity</h3>
+          <p>
+            Unlike apps biased towards western fast foods, NutriGlobe natively catalogues South Asian, Mediterranean, Middle Eastern, East Asian, and Latin dishes with full macro and micronutrient density.
+          </p>
+          <div class="feature-badge-list">
+            <span class="badge-tag">14 World Cuisines</span>
+            <span class="badge-tag">165 Verified Dishes</span>
+            <span class="badge-tag">Creative Commons Imagery</span>
+          </div>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-box">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          </div>
+          <h3 class="serif-display">Uncompromising Privacy</h3>
+          <p>
+            Your health data belongs to you. Each user account operates on an isolated SQLite database file. Android OS cloud backups exclude your private diaries to prevent data leakage.
+          </p>
+          <div class="feature-badge-list">
+            <span class="badge-tag">Per-User DB Isolation</span>
+            <span class="badge-tag">SEC-01 Hardened</span>
+            <span class="badge-tag">Instant Account Deletion</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Global Cuisines Showcase -->
+  <section id="cuisines" class="section">
+    <div class="container">
+      <div style="display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 20px; margin-bottom: 40px;">
+        <div>
+          <span class="section-label">Culinary Diversity</span>
+          <h2 class="serif-display section-title" style="margin-bottom: 8px;">14 Cultural Cuisines at Your Fingertips</h2>
+          <p class="section-subtitle" style="margin-bottom: 0;">Verified portion sizes, traditional cooking styles, and high-definition photography.</p>
+        </div>
+        <div>
+          <span class="badge-tag" style="font-size: 0.9rem; padding: 8px 16px;">160+ Photographic Assets Included</span>
+        </div>
+      </div>
+
+      <div class="cuisines-strip">
+        <div class="cuisine-card">
+          <img src="./assets/images/foods/food_chicken_biryani.webp" alt="Chicken Biryani" class="cuisine-img">
+          <div class="cuisine-name">South Asian</div>
+          <div class="cuisine-meta">Biryani, Karahi, Daal, Roti</div>
+        </div>
+        <div class="cuisine-card">
+          <img src="./assets/images/foods/food_baba_ganoush.webp" alt="Baba Ganoush" class="cuisine-img">
+          <div class="cuisine-name">Middle Eastern</div>
+          <div class="cuisine-meta">Hummus, Falafel, Shawarma</div>
+        </div>
+        <div class="cuisine-card">
+          <img src="./assets/images/foods/food_bibimbap.webp" alt="Bibimbap" class="cuisine-img">
+          <div class="cuisine-name">East Asian</div>
+          <div class="cuisine-meta">Bibimbap, Sushi, Ramen</div>
+        </div>
+        <div class="cuisine-card">
+          <img src="./assets/images/foods/food_beef_taco.webp" alt="Beef Taco" class="cuisine-img">
+          <div class="cuisine-name">Latin American</div>
+          <div class="cuisine-meta">Tacos, Burritos, Guacamole</div>
+        </div>
+        <div class="cuisine-card">
+          <img src="./assets/images/foods/food_avocado.webp" alt="Avocado" class="cuisine-img">
+          <div class="cuisine-name">Mediterranean</div>
+          <div class="cuisine-meta">Greek Salad, Olive Oil, Fish</div>
+        </div>
+        <div class="cuisine-card">
+          <img src="./assets/images/foods/food_baklava.webp" alt="Baklava" class="cuisine-img">
+          <div class="cuisine-name">Traditional Sweets</div>
+          <div class="cuisine-meta">Baklava, Kheer, Halwa</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Food & Nutrition Tracking Deep-Dive -->
+  <section id="tracking" class="section alt-bg">
+    <div class="container">
+      <div class="showcase-grid">
+        <div class="showcase-content">
+          <span class="section-label">Intuitive Diary</span>
+          <h2 class="serif-display section-title">Log Meals in Seconds. Understand Every Gram.</h2>
+          <p class="section-subtitle" style="margin-bottom: 24px;">
+            NutriGlobe's responsive date stepper and meal partition engine allow you to log breakfast, lunch, dinner, and snacks with fluid ease.
+          </p>
+
+          <div class="showcase-list">
+            <div class="showcase-item">
+              <div class="showcase-item-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3h18v18H3zM9 9h6v6H9z"/></svg>
+              </div>
+              <div class="showcase-item-text">
+                <h4>Camera Barcode Scanner</h4>
+                <p>Instant product lookup via CameraX with zero unnecessary image uploads or latency.</p>
+              </div>
+            </div>
+
+            <div class="showcase-item">
+              <div class="showcase-item-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              </div>
+              <div class="showcase-item-text">
+                <h4>Recipe & Meal Favorites</h4>
+                <p>One-tap logging for recurring culinary creations, batch-prepped lunches, and daily snacks.</p>
+              </div>
+            </div>
+
+            <div class="showcase-item">
+              <div class="showcase-item-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+              </div>
+              <div class="showcase-item-text">
+                <h4>Exact 4/4/9 Caloric Energy Balance</h4>
+                <p>Nutritional calculations rigorously enforce that protein and carbs equal 4 kcal/g and fats equal 9 kcal/g, avoiding rounding illusions.</p>
+              </div>
+            </div>
+          </div>
+
+          <a href="#premium" class="btn btn-primary">Discover More</a>
+        </div>
+
+        <div class="showcase-img-box">
+          <img src="./assets/images/app-screen-diary.png" alt="NutriGlobe 2.0 Historical Diary Navigation">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Wellness & Analytics Section -->
+  <section id="wellness" class="section">
+    <div class="container">
+      <div class="showcase-grid reverse">
+        <div class="showcase-img-box">
+          <img src="./assets/images/app-dashboard-hero.png" alt="NutriGlobe Analytics & Wellness Tracking">
+        </div>
+
+        <div class="showcase-content">
+          <span class="section-label">Comprehensive Metrics</span>
+          <h2 class="serif-display section-title">Continuous Timelines. Zero Missing Data Distortion.</h2>
+          <p class="section-subtitle" style="margin-bottom: 24px;">
+            Unlike standard trackers that distort graphs by skipping unlogged days, NutriGlobe uses continuous timeline zero-filling across 7-day, 30-day, and 90-day intervals.
+          </p>
+
+          <div class="showcase-list">
+            <div class="showcase-item">
+              <div class="showcase-item-icon" style="color: var(--color-water);">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
+              </div>
+              <div class="showcase-item-text">
+                <h4>Dynamic Hydration Tracking</h4>
+                <p>Calculates exact liquid intake recommendations customized to body weight and activity, tracked over a rolling 14-day history.</p>
+              </div>
+            </div>
+
+            <div class="showcase-item">
+              <div class="showcase-item-icon" style="color: var(--color-fat);">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z"/><line x1="16" y1="8" x2="2" y2="22"/><line x1="17.5" y1="15" x2="9" y2="15"/></svg>
+              </div>
+              <div class="showcase-item-text">
+                <h4>Weight Logging & Body Measurements</h4>
+                <p>Deduplicates same-day logs by epochDay and tracks circumference metrics across waist, hips, chest, neck, and arms.</p>
+              </div>
+            </div>
+
+            <div class="showcase-item">
+              <div class="showcase-item-icon" style="color: var(--color-protein);">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+              </div>
+              <div class="showcase-item-text">
+                <h4>Weekly Meal & Grocery Planner</h4>
+                <p>Schedule your weekly nutrition intake and generate shopping item checklists with automatic gram aggregations.</p>
+              </div>
+            </div>
+          </div>
+
+          <a href="#premium" class="btn btn-secondary">Upgrade to Plus</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Premium Subscription Section (NutriGlobe Plus) -->
+  <section id="premium" class="section alt-bg">
+    <div class="container">
+      <div style="text-align: center; max-width: 720px; margin: 0 auto 56px;">
+        <span class="section-label" style="background:#FDF9EE; border-color:#EFE4CA; color:var(--accent-champagne-gold);">Monetization Transparency</span>
+        <h2 class="serif-display section-title">Choose Your NutriGlobe Experience</h2>
+        <p class="section-subtitle" style="margin-left: auto; margin-right: auto;">
+          Core calorie counting, food searching, custom dishes, water tracking, and local diary storage are 100% free forever. Upgrade to NutriGlobe Plus for ad-free calm and advanced analytics.
+        </p>
+      </div>
+
+      <div class="pricing-grid">
+        <!-- Free Plan -->
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="plan-name">NutriGlobe Free</h3>
+            <p class="plan-desc">Essential nutrition tracking for everyone. No credit card required.</p>
+            <div class="plan-price-wrap">
+              <span class="plan-price">$0</span>
+              <span class="plan-period">/ forever</span>
+            </div>
+          </div>
+
+          <div class="pricing-features">
+            <div class="pricing-feature-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>165 global food database & barcode search</span>
+            </div>
+            <div class="pricing-feature-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Complete Mifflin-St Jeor calorie & macro split</span>
+            </div>
+            <div class="pricing-feature-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Hydration, weight & body measurement logs</span>
+            </div>
+            <div class="pricing-feature-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>100% offline-ready SQLite diary</span>
+            </div>
+            <div class="pricing-feature-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Google UMP compliant privacy ads</span>
+            </div>
+          </div>
+
+          <a href="#download" class="btn btn-secondary">Current Default Tier</a>
+        </div>
+
+        <!-- Plus Plan -->
+        <div class="pricing-card featured">
+          <div class="pricing-featured-badge">Most Popular</div>
+          <div class="pricing-header">
+            <h3 class="plan-name">NutriGlobe Plus</h3>
+            <p class="plan-desc">Pure focus, zero advertisements, and extended historical analytics.</p>
+            <div class="plan-price-wrap">
+              <span class="plan-price">Monthly / Annual</span>
+            </div>
+            <div style="font-size: 0.85rem; color: var(--primary-botanical-green); font-weight: 700;">
+              Google Play Billing v7 Verified
+            </div>
+          </div>
+
+          <div class="pricing-features">
+            <div class="pricing-feature-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span><strong>100% Ad-Free Experience</strong> (Banner & Interstitial suppressed)</span>
+            </div>
+            <div class="pricing-feature-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>90-day extended macro trend charts & continuous timelines</span>
+            </div>
+            <div class="pricing-feature-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Priority multi-device Cloud Firestore sync</span>
+            </div>
+            <div class="pricing-feature-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Custom macro ratio fine-tuning</span>
+            </div>
+            <div class="pricing-feature-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Manage or cancel anytime directly in Google Play</span>
+            </div>
+          </div>
+
+          <a href="#download" class="btn btn-primary">Subscribe in App</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Support & Contact Section -->
+  <section id="support" class="section">
+    <div class="container">
+      <div class="contact-card">
+        <span class="section-label">Official Support</span>
+        <h2 class="serif-display section-title" style="margin-bottom: 12px;">We're Here to Assist You</h2>
+        <p class="section-subtitle" style="margin-left: auto; margin-right: auto; margin-bottom: 24px;">
+          Have questions regarding nutritional calculations, data deletion, Google Play subscriptions, or bug reports? Contact our developer support team directly.
+        </p>
+
+        <a href="mailto:wasifrizvi111@gmail.com" class="contact-email-link">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          wasifrizvi111@gmail.com
+        </a>
+
+        <div style="margin-top: 16px;">
+          <button class="btn btn-secondary copy-email-btn" style="padding: 8px 18px; font-size: 0.85rem;">Copy Email Address</button>
+        </div>
+
+        <div style="margin-top: 36px; display: flex; justify-content: center; gap: 24px; flex-wrap: wrap;">
+          <a href="./privacy.html" style="font-weight: 600; color: var(--primary-botanical-green);">Read Privacy Policy →</a>
+          <a href="./delete-account.html" style="font-weight: 600; color: var(--text-secondary);">Request Account Deletion →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- App Download Banner -->
+  <section id="download" class="section alt-bg" style="padding: 64px 0;">
+    <div class="container" style="text-align: center; max-width: 680px;">
+      <h2 class="serif-display section-title">Ready to Elevate Your Nutrition?</h2>
+      <p class="section-subtitle" style="margin-left: auto; margin-right: auto; margin-bottom: 32px;">
+        NutriGlobe 2.0 is built for Android (Target SDK 35, Min SDK 26) with full compatibility across modern handsets.
+      </p>
+      <div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;">
+        <a href="mailto:wasifrizvi111@gmail.com?subject=NutriGlobe%202.0%20Internal%20Testing%20Access" class="btn btn-primary">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Request Play Console Internal Access
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="./assets/images/logo.svg" alt="NutriGlobe" style="filter: brightness(0) invert(1); height: 38px; width: auto;">
+          <p>
+            NutriGlobe 2.0 is a precision nutrition and dietary tracking platform engineered with botanical elegance, offline-first reliability, and strict privacy safeguards.
+          </p>
+          <div style="font-size: 0.85rem; color: #8E9886;">
+            Contact: <a href="mailto:wasifrizvi111@gmail.com" style="color: #D4B67A;">wasifrizvi111@gmail.com</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About NutriGlobe</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#cuisines">14 Cultural Cuisines</a></li>
+            <li><a href="#tracking">Food & Macro Tracking</a></li>
+            <li><a href="#wellness">Wellness & Analytics</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Subscription & Store</h4>
+          <ul>
+            <li><a href="#premium">NutriGlobe Plus</a></li>
+            <li><a href="#premium">Monthly & Annual Plans</a></li>
+            <li><a href="#premium">Ad Suppression Policy</a></li>
+            <li><a href="#download">Google Play Internal Track</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Privacy & Legal</h4>
+          <ul>
+            <li><a href="./privacy.html">Privacy Policy</a></li>
+            <li><a href="./delete-account.html">Account & Data Deletion</a></li>
+            <li><a href="#support">Support & Help Desk</a></li>
+            <li><a href="./privacy.html#admob">AdMob & UMP Compliance</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © <span id="current-year">2026</span> NutriGlobe 2.0. All rights reserved.
+        </div>
+        <div>
+          Engineered by Syed Wasif Ali Rizvi · Hosted on GitHub Pages
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>

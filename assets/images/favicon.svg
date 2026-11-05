@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" width="64" height="64">
+  <defs>
+    <linearGradient id="favGlobe" x1="16" y1="12" x2="48" y2="52" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="65%" stop-color="#EDE6D6" />
+      <stop offset="100%" stop-color="#D8CEB8" />
+    </linearGradient>
+    <linearGradient id="favLeaf" x1="32" y1="10" x2="54" y2="36" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#708B67" />
+      <stop offset="50%" stop-color="#526B4B" />
+      <stop offset="100%" stop-color="#394A35" />
+    </linearGradient>
+  </defs>
+  <!-- Background circle with warm ivory tone -->
+  <circle cx="32" cy="32" r="30" fill="#F5F3EA" stroke="#DCE2D6" stroke-width="1.5" />
+  
+  <!-- Base globe sphere -->
+  <circle cx="32" cy="32" r="21" fill="url(#favGlobe)" stroke="#C6A66B" stroke-width="1.8" />
+  <ellipse cx="32" cy="32" rx="9" ry="21" fill="none" stroke="#C6A66B" stroke-width="1.2" opacity="0.85" />
+  <line x1="11" y1="32" x2="53" y2="32" stroke="#C6A66B" stroke-width="1.2" opacity="0.85" />
+  <path d="M15 22 Q 32 26 49 22" fill="none" stroke="#C6A66B" stroke-width="1.0" opacity="0.7" />
+  <path d="M15 42 Q 32 38 49 42" fill="none" stroke="#C6A66B" stroke-width="1.0" opacity="0.7" />
+
+  <!-- Botanical Olive Leaf -->
+  <path d="M30 40 C30 22 41 11 54 9 C54 26 44 38 30 40 Z" fill="url(#favLeaf)" stroke="#EDE6D6" stroke-width="1.2" />
+  <path d="M33 37 Q 42 24 51 12" fill="none" stroke="#C6A66B" stroke-width="1.0" stroke-linecap="round" />
+</svg>

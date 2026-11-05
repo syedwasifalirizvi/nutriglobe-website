@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Account & Data Deletion — NutriGlobe 2.0</title>
+  <meta name="description" content="Step-by-step instructions to delete your NutriGlobe 2.0 account and permanently purge all associated nutrition logs, weight entries, and personal records.">
+  <meta name="theme-color" content="#526B4B">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="./assets/images/favicon.svg">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+
+  <!-- Site Navigation -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="./index.html" class="brand-link" aria-label="NutriGlobe Home">
+        <img src="./assets/images/logo.svg" alt="NutriGlobe Logo" class="brand-logo-img">
+      </a>
+
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="./index.html#home" class="nav-link">Home</a>
+        <a href="./index.html#features" class="nav-link">Features</a>
+        <a href="./index.html#tracking" class="nav-link">Tracking</a>
+        <a href="./index.html#premium" class="nav-link">NutriGlobe Plus</a>
+        <a href="./privacy.html" class="nav-link">Privacy Policy</a>
+        <a href="./delete-account.html" class="nav-link active">Account Deletion</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="mailto:wasifrizvi111@gmail.com" class="btn btn-secondary">Direct Support</a>
+      </div>
+
+      <button class="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        ☰
+      </button>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <div class="legal-page-header">
+    <div class="container">
+      <span class="section-label">User Data Sovereignty</span>
+      <h1 class="serif-display" style="font-size: clamp(2.2rem, 4vw, 3.2rem); margin-bottom: 12px;">Account & Data Deletion Portal</h1>
+      <p style="color: var(--text-secondary); max-width: 680px;">
+        NutriGlobe 2.0 strictly respects your right to be forgotten. Learn how to immediately and irreversibly delete your account, dietary history, and biometric data.
+      </p>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <main class="legal-content-wrap">
+    <div class="container" style="max-width: 860px;">
+      <article class="legal-article" style="padding: 44px 40px;">
+        <div class="legal-meta-box">
+          <div><strong>Google Play Policy Compliance:</strong> Full Self-Service Deletion</div>
+          <div><strong>Turnaround Time:</strong> Immediate (In-App) or 48–72h (Email)</div>
+          <div><strong>Support Email:</strong> wasifrizvi111@gmail.com</div>
+        </div>
+
+        <h2 class="serif-display" style="border-bottom:none; margin-top:0;">Option 1: In-App Instant Deletion (Recommended)</h2>
+        <p>
+          You can permanently delete your NutriGlobe account directly within the Android application with immediate effect. No waiting periods, tickets, or human intervention are required:
+        </p>
+
+        <div class="deletion-step-box">
+          <p style="margin-bottom: 14px;">
+            <span class="step-num">1</span> <strong>Open NutriGlobe 2.0</strong> on your Android handset and ensure you are signed in.
+          </p>
+          <p style="margin-bottom: 14px;">
+            <span class="step-num">2</span> Tap on the <strong>Profile tab</strong> in the bottom navigation bar, or select <strong>Settings</strong> from the top right menu.
+          </p>
+          <p style="margin-bottom: 14px;">
+            <span class="step-num">3</span> Select <strong>Account &amp; Security Settings</strong>.
+          </p>
+          <p style="margin-bottom: 14px;">
+            <span class="step-num">4</span> Scroll down to the red danger zone and tap <strong>Delete Account &amp; Data</strong>.
+          </p>
+          <p style="margin-bottom: 0;">
+            <span class="step-num">5</span> Read the confirmation warning explaining the permanent nature of the wipe, enter your account credentials to authenticate ownership, and confirm.
+          </p>
+        </div>
+
+        <h2 class="serif-display" style="margin-top: 40px;">What Happens When Your Account is Deleted?</h2>
+        <p>
+          Once confirmed, our client-side cascading deletion engine performs an atomic purge across all systems:
+        </p>
+
+        <table class="audit-badge-table">
+          <thead>
+            <tr>
+              <th>Data Category</th>
+              <th>Action Taken</th>
+              <th>Residual Retention</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Cloud Firestore Subcollections</strong><br>(diary, water, weights, measurements, custom_foods, favorites, planner, shopping)</td>
+              <td>All documents across all 8 subcollections are permanently deleted.</td>
+              <td><strong>0 seconds</strong> (Permanently destroyed)</td>
+            </tr>
+            <tr>
+              <td><strong>User Profile Document</strong><br>(/users/{userId})</td>
+              <td>Target calories, macros, units, and profile metadata deleted.</td>
+              <td><strong>0 seconds</strong> (Permanently destroyed)</td>
+            </tr>
+            <tr>
+              <td><strong>Local SQLite Database</strong><br>(nutriglobe2_user_{uid}.db)</td>
+              <td>Local Room database file is securely wiped and unlinked.</td>
+              <td><strong>0 seconds</strong> (Wiped on device)</td>
+            </tr>
+            <tr>
+              <td><strong>Firebase Authentication</strong></td>
+              <td>User record, login session, and OAuth tokens are permanently revoked.</td>
+              <td><strong>0 seconds</strong> (Purged from Firebase Auth)</td>
+            </tr>
+            <tr>
+              <td><strong>Cached Preferences</strong></td>
+              <td>DataStore session caches and temporary export files are cleared.</td>
+              <td><strong>0 seconds</strong> (Cleared)</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div style="background: rgba(179, 63, 45, 0.08); border: 1px solid rgba(179, 63, 45, 0.25); border-radius: var(--radius-md); padding: 18px 24px; margin: 28px 0;">
+          <h4 style="color: #B33F2D; margin-bottom: 6px;">Important Note on Subscriptions</h4>
+          <p style="font-size: 0.92rem; color: #252B23; margin-bottom: 0;">
+            Deleting your NutriGlobe account does not automatically cancel an active Google Play subscription. In compliance with Google Play Store rules, subscriptions must be managed directly in the <strong>Google Play Store app &gt; Subscriptions</strong>.
+          </p>
+        </div>
+
+        <h2 class="serif-display" style="margin-top: 40px;">Option 2: Web / Email Deletion Request</h2>
+        <p>
+          If you have uninstalled the NutriGlobe application, lost access to your Android device, or are unable to access the in-app deletion menu, you can submit a manual account deletion request directly to our developer team:
+        </p>
+
+        <div class="deletion-step-box" style="border-left-color: var(--accent-champagne-gold);">
+          <p>Send an email from your <strong>registered NutriGlobe account email address</strong> to:</p>
+          <p style="font-size: 1.2rem; font-weight: 700; color: var(--primary-botanical-green); margin: 12px 0;">
+            <a href="mailto:wasifrizvi111@gmail.com?subject=NutriGlobe%20Account%20Deletion%20Request" style="color:inherit;">wasifrizvi111@gmail.com</a>
+          </p>
+          <p style="font-size: 0.92rem; color: var(--text-secondary); margin-bottom: 0;">
+            <strong>Subject line:</strong> NutriGlobe Account Deletion Request<br>
+            <strong>Body:</strong> Please include your full name and confirm that you request the permanent erasure of your account and all associated cloud and local data.
+          </p>
+        </div>
+
+        <p style="font-size: 0.92rem; color: var(--text-secondary);">
+          We verify the sender's identity to prevent unauthorized deletion requests. Once verified, all associated records will be permanently purged within 48 to 72 business hours, and a confirmation email will be sent back to you.
+        </p>
+
+        <div style="margin-top: 40px; text-align: center;">
+          <a href="./index.html" class="btn btn-secondary">← Back to NutriGlobe Home</a>
+          <a href="./privacy.html" class="btn btn-primary" style="margin-left: 12px;">Review Privacy Policy</a>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom" style="border-top: none; padding-top: 0;">
+        <div>© <span id="current-year">2026</span> NutriGlobe 2.0. All rights reserved.</div>
+        <div>Support: <a href="mailto:wasifrizvi111@gmail.com" style="color: #D4B67A;">wasifrizvi111@gmail.com</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>

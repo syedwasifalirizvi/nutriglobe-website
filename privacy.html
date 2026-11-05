@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — NutriGlobe 2.0 Official</title>
+  <meta name="description" content="NutriGlobe 2.0 Privacy Policy: Technical disclosures on Firebase Authentication, Cloud Firestore, local SQLite storage, Google AdMob, UMP consent, Google Play Billing, and user data deletion.">
+  <meta name="theme-color" content="#526B4B">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="./assets/images/favicon.svg">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+
+  <!-- Site Navigation -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="./index.html" class="brand-link" aria-label="NutriGlobe Home">
+        <img src="./assets/images/logo.svg" alt="NutriGlobe Logo" class="brand-logo-img">
+      </a>
+
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="./index.html#home" class="nav-link">Home</a>
+        <a href="./index.html#about" class="nav-link">About</a>
+        <a href="./index.html#features" class="nav-link">Features</a>
+        <a href="./index.html#tracking" class="nav-link">Tracking</a>
+        <a href="./index.html#premium" class="nav-link">NutriGlobe Plus</a>
+        <a href="./privacy.html" class="nav-link active">Privacy Policy</a>
+        <a href="./delete-account.html" class="nav-link">Account Deletion</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="mailto:wasifrizvi111@gmail.com" class="btn btn-secondary">Contact Privacy Officer</a>
+      </div>
+
+      <button class="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        ☰
+      </button>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <div class="legal-page-header">
+    <div class="container">
+      <span class="section-label">Legal & Privacy Disclosures</span>
+      <h1 class="serif-display" style="font-size: clamp(2.2rem, 4vw, 3.2rem); margin-bottom: 12px;">NutriGlobe 2.0 Privacy Policy</h1>
+      <p style="color: var(--text-secondary); max-width: 680px;">
+        Comprehensive technical disclosures regarding personal data collection, local SQLite storage, Firebase Firestore synchronization, Google AdMob advertising, Google Play Billing, and account deletion.
+      </p>
+    </div>
+  </div>
+
+  <!-- Main Legal Content -->
+  <main class="legal-content-wrap">
+    <div class="container">
+      <div class="legal-grid">
+        <!-- Sticky Table of Contents -->
+        <aside class="legal-sidebar">
+          <div class="legal-toc-title">Table of Contents</div>
+          <nav class="legal-toc-list">
+            <a href="#overview" class="legal-toc-link">1. Overview & Data Controller</a>
+            <a href="#data-collection" class="legal-toc-link">2. Data We Collect</a>
+            <a href="#local-storage" class="legal-toc-link">3. Local SQLite & OS Backups</a>
+            <a href="#firebase" class="legal-toc-link">4. Firebase & Cloud Firestore</a>
+            <a href="#admob" class="legal-toc-link">5. Google AdMob & UMP Consent</a>
+            <a href="#billing" class="legal-toc-link">6. Google Play Billing (Plus)</a>
+            <a href="#camera" class="legal-toc-link">7. Camera & Permissions</a>
+            <a href="#deletion" class="legal-toc-link">8. Account & Data Deletion</a>
+            <a href="#children" class="legal-toc-link">9. Children's Privacy</a>
+            <a href="#security" class="legal-toc-link">10. Data Security Measures</a>
+            <a href="#contact" class="legal-toc-link">11. Contact Details</a>
+          </nav>
+        </aside>
+
+        <!-- Legal Article -->
+        <article class="legal-article">
+          <div class="legal-meta-box">
+            <div><strong>Effective Date:</strong> November 6, 2026</div>
+            <div><strong>Application Version:</strong> NutriGlobe 2.0</div>
+            <div><strong>Contact:</strong> wasifrizvi111@gmail.com</div>
+          </div>
+
+          <section id="overview">
+            <h2>1. Overview & Data Controller</h2>
+            <p>
+              This Privacy Policy explains how <strong>NutriGlobe 2.0</strong> ("we", "our", or "the Application"), developed by Syed Wasif Ali Rizvi, collects, utilizes, stores, synchronizes, and safeguards your personal and dietary information when you use the NutriGlobe Android application and associated online services.
+            </p>
+            <p>
+              NutriGlobe 2.0 is built with an <strong>offline-first, multi-user privacy architecture</strong>. Unlike traditional fitness trackers that monetize or sell user dietary records to third parties, NutriGlobe does not sell, rent, or trade your personal health logs, dietary history, or weight measurements to any data brokers, marketers, or external entities.
+            </p>
+          </section>
+
+          <section id="data-collection">
+            <h2>2. Information We Collect</h2>
+            <p>When registering and using NutriGlobe 2.0, the application collects only the minimum information necessary to calculate personalized metabolic recommendations and synchronize your nutrition logs:</p>
+            <ul>
+              <li><strong>Account Credentials:</strong> Email address, user display name, and unique Firebase Authentication user ID (UID). Passwords are cryptographically salted and hashed directly by Google Firebase Authentication; NutriGlobe never has access to raw passwords.</li>
+              <li><strong>Physical & Metabolic Metrics:</strong> Age, biological sex, height (cm/inches), current body weight (kg/lbs), goal weight, and physical activity tier. These are used strictly to calculate your Basal Metabolic Rate (BMR) and Total Daily Energy Expenditure (TDEE) via the Mifflin-St Jeor formula.</li>
+              <li><strong>Dietary & Wellness Logs:</strong> Daily food diary entries (meal type, portion size in grams, calories, protein, carbohydrates, fats, fiber, sugar, sodium), liquid hydration logs (milliliters), daily body weight entries, and optional body circumference measurements (waist, hips, chest, arms, neck).</li>
+              <li><strong>User Preferences:</strong> Metric vs. Imperial measurement units, theme preference (Botanical Light, Botanical Dark, System), dietary tags (Vegetarian, Vegan, Halal, Gluten-Free), and custom recipe items.</li>
+            </ul>
+          </section>
+
+          <section id="local-storage">
+            <h2>3. Local SQLite Sandboxing & Android Backup Hardening (SEC-01)</h2>
+            <p>
+              To ensure data isolation and prevent cross-contamination between family members sharing the same Android handset, NutriGlobe 2.0 implements per-user isolated database instances:
+            </p>
+            <ul>
+              <li><strong>Sandboxed SQLite Files:</strong> Each authenticated user's records are stored in a dedicated local file (<code>nutriglobe2_user_{userId}.db</code>) managed by Android Room. Signing out terminates all active database connections and resets state flows.</li>
+              <li><strong>Android 12+ Data Extraction Rules (API 31+):</strong> NutriGlobe enforces strict data extraction rules (<code>data_extraction_rules.xml</code>) that explicitly exclude all user databases, SharedPreferences session tokens, and Firestore persistent caches from automated Google Drive cloud backups.</li>
+              <li><strong>Legacy Auto Backup Rules (API 23–30):</strong> Configured via <code>backup_rules.xml</code> to guarantee that legacy unencrypted cloud backup transports do not transmit health logs or authentication tokens.</li>
+              <li><strong>Device-to-Device Migration:</strong> Direct unauthenticated ad-hoc device cloning excludes user databases; users restore their diary by logging into Firebase Authentication, ensuring cryptographic session validation.</li>
+            </ul>
+          </section>
+
+          <section id="firebase">
+            <h2>4. Firebase Authentication & Cloud Firestore (Spark Free Plan)</h2>
+            <p>
+              NutriGlobe 2.0 utilizes Google Firebase cloud infrastructure operating strictly within the <strong>Firebase Spark Free Tier</strong>. We do not operate serverless cloud functions, external middleware servers, or require paid cloud billing:
+            </p>
+            <ul>
+              <li><strong>Client-Side Firestore Sync:</strong> Data is synchronized directly between the Android application and Cloud Firestore over TLS/HTTPS encryption.</li>
+              <li><strong>8 Isolated Subcollections:</strong> All user records are partitioned under <code>users/{userId}/...</code> subcollections: <code>diary</code>, <code>water</code>, <code>weights</code>, <code>measurements</code>, <code>custom_foods</code>, <code>favorites</code>, <code>planner</code>, and <code>shopping</code>.</li>
+              <li><strong>Firestore Security Rules:</strong> All documents enforce <code>rules_version = '2'</code> with mandatory <code>isOwner(userId)</code> assertions (<code>request.auth != null &amp;&amp; request.auth.uid == userId</code>). No user can query, read, or modify another user's documents.</li>
+              <li><strong>Offline Persistent Cache:</strong> When no internet connection is present, the app reads and writes locally using Firebase PersistentCacheSettings, seamlessly queuing mutations until reconnection.</li>
+            </ul>
+          </section>
+
+          <section id="admob">
+            <h2>5. Google AdMob & User Messaging Platform (UMP) Consent</h2>
+            <p>
+              To keep core nutrition tracking 100% free for all users, NutriGlobe 2.0 displays standard advertisements in the free tier via the official Google Mobile Ads SDK:
+            </p>
+            <ul>
+              <li><strong>Official Production Ad Unit IDs:</strong>
+                <ul>
+                  <li>Google AdMob App ID: <code>ca-app-pub-3864854315074031~9149899490</code></li>
+                  <li>Production Banner Ad Unit: <code>ca-app-pub-3864854315074031/8798158667</code></li>
+                  <li>Production Interstitial Ad Unit: <code>ca-app-pub-3864854315074031/8355692578</code></li>
+                </ul>
+              </li>
+              <li><strong>Build Variant Environment Separation:</strong> Debug development builds strictly resolve to Google sample test ad units, preventing accidental live ad impressions during testing.</li>
+              <li><strong>Hardware Test Device Protection:</strong> Developer handsets (including Samsung Galaxy A06) are registered in Google AdMob's RequestConfiguration test device list to safeguard against invalid traffic strikes.</li>
+              <li><strong>European Economic Area (EEA) &amp; UK Consent (UMP):</strong> In compliance with GDPR and Google policy, users in the EEA and UK are presented with the Google User Messaging Platform (UMP) consent form to grant or deny personalized advertising consent. Consent preferences can be updated or revoked at any time via the in-app "Privacy &amp; Consent Options" menu under Settings.</li>
+              <li><strong>NutriGlobe Plus Ad Suppression:</strong> When a user subscribes to NutriGlobe Plus, all banner and interstitial advertising requests are completely disabled and collapsed in the UI.</li>
+            </ul>
+          </section>
+
+          <section id="billing">
+            <h2>6. Google Play Billing Subscriptions (NutriGlobe Plus)</h2>
+            <p>
+              NutriGlobe 2.0 offers an optional premium subscription tier, <strong>NutriGlobe Plus</strong>, powered by Google Play Billing Library v7:
+            </p>
+            <ul>
+              <li><strong>Subscription Products:</strong> Monthly (<code>nutriglobe_premium_monthly</code>) and Annual (<code>nutriglobe_premium_annual</code>).</li>
+              <li><strong>Payment Security:</strong> All financial transactions, credit cards, payment methods, and renewals are handled exclusively by Google Play. NutriGlobe never collects, processes, or stores credit card numbers, bank accounts, or financial credentials.</li>
+              <li><strong>Purchase Acknowledgement:</strong> Subscriptions are acknowledged according to Google Play specifications. If a purchase is pending banking confirmation, the app holds a pending state until confirmed.</li>
+              <li><strong>Cancellation &amp; Refunds:</strong> Subscriptions can be managed, changed, or cancelled at any time through the Google Play Store app under Account &gt; Payments &amp; Subscriptions.</li>
+            </ul>
+          </section>
+
+          <section id="camera">
+            <h2>7. Device Permissions &amp; Hardware Usage</h2>
+            <p>NutriGlobe 2.0 requests only the following minimal Android permissions:</p>
+            <ul>
+              <li><code>android.permission.INTERNET</code>: Required for Firebase Authentication, Firestore cloud sync, and Google AdMob ad delivery.</li>
+              <li><code>android.permission.ACCESS_NETWORK_STATE</code>: Used to monitor network connectivity to toggle offline vs. cloud sync modes safely.</li>
+              <li><code>android.permission.CAMERA</code>: Required solely for the barcode scanner powered by Android CameraX. Camera frames are processed in volatile memory on-device; no photos or video streams are saved or uploaded.</li>
+              <li><code>android.permission.POST_NOTIFICATIONS</code>: Optional permission used solely for user-configured meal, water, and weight reminder notifications.</li>
+            </ul>
+          </section>
+
+          <section id="deletion">
+            <h2>8. Account &amp; Complete Data Deletion Rights</h2>
+            <p>
+              In full compliance with Google Play Developer Policies, the EU General Data Protection Regulation (GDPR), and the California Consumer Privacy Act (CCPA), NutriGlobe provides users with immediate, unhindered rights to delete their account and all associated personal data:
+            </p>
+            <ul>
+              <li><strong>In-App Deletion:</strong> Navigate to <em>Settings &gt; Account Settings &gt; Delete Account</em>. A two-step explicit confirmation dialog requires user authentication.</li>
+              <li><strong>What is Deleted:</strong> Client-side cascading deletion wipes all 8 Firestore subcollections, deletes the profile document, deletes the user account in Firebase Auth, wipes the local SQLite database file, and purges all cached DataStore preferences.</li>
+              <li><strong>Web Request Option:</strong> Users unable to access their mobile device can request permanent deletion via our dedicated <a href="./delete-account.html" style="color:var(--primary-botanical-green); font-weight:700;">Account &amp; Data Deletion Page</a> or by emailing <a href="mailto:wasifrizvi111@gmail.com" style="color:var(--primary-botanical-green);">wasifrizvi111@gmail.com</a>.</li>
+            </ul>
+          </section>
+
+          <section id="children">
+            <h2>9. Children's Privacy (COPPA Compliance)</h2>
+            <p>
+              NutriGlobe 2.0 is designed for users aged 14 and older. The initial profile onboarding flow enforces an age validation floor of 14 years. We do not knowingly solicit, collect, or store personal information from children under the age of 13. If you believe a child under 13 has provided personal data, please contact us immediately at <a href="mailto:wasifrizvi111@gmail.com" style="color:var(--primary-botanical-green);">wasifrizvi111@gmail.com</a>, and we will purge the account immediately.
+            </p>
+          </section>
+
+          <section id="security">
+            <h2>10. Data Security Measures</h2>
+            <p>
+              We implement comprehensive technical and organizational safeguards to protect your personal information:
+            </p>
+            <ul>
+              <li>All transit communications use Transport Layer Security (TLS 1.2 / 1.3 / HTTPS).</li>
+              <li>Local SQLite database files reside within the Android application's sandboxed private data directory, inaccessible to other apps without root privileges.</li>
+              <li>Release builds are stripped of dead code, obfuscated using R8, and cryptographically signed with our verified release keystore.</li>
+            </ul>
+          </section>
+
+          <section id="contact">
+            <h2>11. Contact Details &amp; Privacy Officer</h2>
+            <p>If you have any questions, concerns, or requests regarding this Privacy Policy or your personal data, please contact:</p>
+            <div style="background: var(--bg-secondary-sage); border: 1px solid var(--border-light); border-radius: var(--radius-md); padding: 20px; margin-top: 16px;">
+              <strong>Syed Wasif Ali Rizvi</strong><br>
+              Lead Developer &amp; Data Controller, NutriGlobe 2.0<br>
+              Email: <a href="mailto:wasifrizvi111@gmail.com" style="color: var(--primary-botanical-green); font-weight: 700;">wasifrizvi111@gmail.com</a><br>
+              Repository: <a href="https://github.com/syedwasifalirizvi/nutriglobe-website" target="_blank" style="color: var(--primary-botanical-green);">https://github.com/syedwasifalirizvi/nutriglobe-website</a><br>
+              Hosting: <a href="https://syedwasifalirizvi.github.io/nutriglobe-website/" target="_blank" style="color: var(--primary-botanical-green);">https://syedwasifalirizvi.github.io/nutriglobe-website/</a>
+            </div>
+          </section>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom" style="border-top: none; padding-top: 0;">
+        <div>© <span id="current-year">2026</span> NutriGlobe 2.0. All rights reserved.</div>
+        <div>Contact: <a href="mailto:wasifrizvi111@gmail.com" style="color: #D4B67A;">wasifrizvi111@gmail.com</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>
